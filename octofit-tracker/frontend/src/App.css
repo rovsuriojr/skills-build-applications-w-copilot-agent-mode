@@ -1,0 +1,157 @@
+
+
+.App {
+  text-align: center;
+}
+
+/* OctoFit custom palette */
+:root {
+  --octo-bg: #f0f4f8;
+  --octo-primary: #2d3142;
+  --octo-accent: #ef8354;
+  --octo-secondary: #4f5d75;
+  --octo-link: #3a86ff;
+  --octo-table-header: #2d3142;
+  --octo-table-row: #ffffff;
+  --octo-table-alt: #e0e7ef;
+  --octo-btn-bg: #ef8354;
+  --octo-btn-text: #fff;
+  --octo-nav-bg: #2d3142;
+  --octo-nav-link: #fff;
+  --octo-nav-link-active: #ef8354;
+  --octo-heading: #ef8354;
+}
+
+body {
+  background: var(--octo-bg);
+  color: var(--octo-primary);
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: var(--octo-bg);
+  color: var(--octo-primary);
+}
+
+nav.navbar {
+  background: var(--octo-nav-bg) !important;
+  box-shadow: 0 2px 8px rgba(45,49,66,0.08);
+}
+.navbar-brand {
+  color: var(--octo-accent) !important;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.navbar-brand img {
+  height: 40px;
+  margin-right: 12px;
+}
+.nav-link {
+  color: var(--octo-nav-link) !important;
+  margin-right: 1rem;
+  transition: color 0.2s;
+}
+.nav-link.active, .nav-link:focus, .nav-link:hover {
+  color: var(--octo-nav-link-active) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--octo-heading);
+  font-weight: 700;
+}
+
+
+a {
+  color: var(--octo-link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover, a:focus {
+  color: var(--octo-accent);
+}
+
+
+button, .btn {
+  background: var(--octo-btn-bg);
+  color: var(--octo-btn-text);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover, .btn:hover {
+  background: var(--octo-secondary);
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  background: var(--octo-table-row);
+  box-shadow: 0 2px 8px rgba(45,49,66,0.04);
+}
+thead {
+  background: var(--octo-table-header);
+  color: #fff;
+}
+tbody tr:nth-child(even) {
+  background: var(--octo-table-alt);
+}
+td, th {
+  padding: 0.75em 1em;
+  border-bottom: 1px solid #e0e7ef;
+}
+
+
+ul {
+  list-style: disc inside;
+  padding-left: 1.5em;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
